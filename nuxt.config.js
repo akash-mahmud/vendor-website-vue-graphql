@@ -29,8 +29,16 @@ export default {
   buildModules: [
 
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/apollo'
   ],
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint:'http://localhost:8000/wpgraphql/graphql'
+      }
+    }
 
+},
 
   modules: [
   ],
